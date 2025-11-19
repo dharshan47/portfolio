@@ -43,14 +43,14 @@ npm install
 # or
 yarn install
 
-3. Create .env file
+### **3. Create .env file**
 
 Create a .env file in the root and add your Google Analytics ID:
 
 NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
 NEXT_PUBLIC_GOOGLE_VERIFICATION_CODE=your-google-verification-code
 
-4. Run the development server
+### **4. Run the development server**
 npm run dev
 # or
 yarn dev
