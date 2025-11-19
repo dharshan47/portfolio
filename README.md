@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dharshan M Portfolio
 
-## Getting Started
+[Visit Live Site](https://dharshanm.vercel.app)
 
-First, run the development server:
+A modern, responsive, and interactive personal portfolio built with **Next.js**, **TypeScript**, and modern web technologies. This portfolio showcases my skills, projects, and experience as a frontend developer.
+
+---
+
+## **Technologies Used**
+
+- **Next.js** – React framework for server-side rendering and static site generation  
+- **TypeScript** – Type-safe JavaScript for better scalability and maintainability  
+- **Tailwind CSS** – Utility-first CSS framework for fast, responsive design  
+- **shadcn/ui** – Prebuilt React UI components for a polished look  
+- **Accernety UI** – Additional UI components and utilities  
+- **Three.js & GSAP** – Animated 3D profile and smooth animations  
+- **Framer Motion** – Animations for interactive UI elements  
+
+---
+
+## **Features**
+
+- Fully responsive design for **desktop, tablet, and mobile**  
+- Smooth **scroll animations** and interactive elements using **Framer Motion**  
+- **3D profile** integration using Three.js and GSAP  
+- SEO optimized with **Next.js metadata and Open Graph tags**  
+- Google Analytics integration for **tracking visitors and events**  
+- Dark mode and theme switching powered by **ThemeProvider**  
+- Organized project and skills showcase sections  
+- Accessible and modern UI components using **shadcn/ui**  
+
+---
+
+## **Screenshots**
+
+![Home Page](./screenshots/home.png)  
+![Projects Page](./screenshots/projects.png)  
+![Skills Page](./screenshots/skills.png)  
+
+*(Add more screenshots in the `screenshots` folder for better presentation)*
+
+---
+
+## **Getting Started**
+
+### **1. Clone the repository**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/dharshan47/portfolio.git
+cd portfolio
