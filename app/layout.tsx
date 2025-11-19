@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/Footer";
 import Schema from "@/components/Schema";
 import { Analytics } from "@vercel/analytics/next";
+import GAListener from "@/components/GAListener";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -69,8 +71,25 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+        {/* Google Analytics Script */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
+          strategy="afterInteractive"
+        />
+
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}', {
+            page_path: window.location.pathname,
+          });
+        `}
+        </Script>
         <Schema />
         <Analytics />
+        <GAListener />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
