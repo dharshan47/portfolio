@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/Footer";
 import Schema from "@/components/Schema";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     title: "Dharshan M",
     description:
       "Passionate frontend developer creating exceptional digital experiences with React, TypeScript, and modern web technologies.",
-    url: "https://dharshan.vercel.app",
+    url: "https://dharshanm.vercel.app",
     siteName: "Dharshan M",
     type: "website",
   },
@@ -69,6 +70,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <Schema />
+        <Analytics />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
