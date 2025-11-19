@@ -31,16 +31,6 @@ A modern, responsive, and interactive personal portfolio built with **Next.js**,
 
 ---
 
-## **Screenshots**
-
-![Home Page](./screenshots/home.png)  
-![Projects Page](./screenshots/projects.png)  
-![Skills Page](./screenshots/skills.png)  
-
-*(Add more screenshots in the `screenshots` folder for better presentation)*
-
----
-
 ## **Getting Started**
 
 ### **1. Clone the repository**
