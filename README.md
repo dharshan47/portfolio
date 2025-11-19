@@ -35,7 +35,6 @@ A modern, responsive, and interactive personal portfolio built with **Next.js**,
 
 ### **1. Clone the repository**
 
-```bash
 git clone https://github.com/dharshan47/portfolio.git
 cd portfolio
 
