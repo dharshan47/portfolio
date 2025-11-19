@@ -12,7 +12,7 @@ A modern, responsive, and interactive personal portfolio built with **Next.js**,
 - **TypeScript** – Type-safe JavaScript for better scalability and maintainability  
 - **Tailwind CSS** – Utility-first CSS framework for fast, responsive design  
 - **shadcn/ui** – Prebuilt React UI components for a polished look  
-- **Accernety UI** – Additional UI components and utilities  
+- **Acertenity UI** – Additional UI components and utilities  
 - **Three.js & GSAP** – Animated 3D profile and smooth animations  
 - **Framer Motion** – Animations for interactive UI elements  
 
@@ -38,3 +38,35 @@ A modern, responsive, and interactive personal portfolio built with **Next.js**,
 ```bash
 git clone https://github.com/dharshan47/portfolio.git
 cd portfolio
+
+### **2. Install dependencies**
+npm install
+# or
+yarn install
+
+3. Create .env file
+
+Create a .env file in the root and add your Google Analytics ID:
+
+NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_GOOGLE_VERIFICATION_CODE=your-google-verification-code
+
+4. Run the development server
+npm run dev
+# or
+yarn dev
+
+
+Open http://localhost:3000
+ to view in the browser.
+
+Deployment
+
+This project is deployed on Vercel:
+
+https://dharshanm.vercel.app
+
+
+You can deploy your own copy using:
+
+vercel --prod
