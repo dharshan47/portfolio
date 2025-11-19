@@ -1,0 +1,16 @@
+{
+  "name": "Dharshan Portfolio",
+  "short_name": "Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "description": "Personal portfolio of Dharshan — Frontend Developer.",
+  "background_color": "#020618",
+  "theme_color": "#020618",
+  "icons": [
+    {
+      "src": "/D.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
