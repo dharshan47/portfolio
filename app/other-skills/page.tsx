@@ -62,7 +62,7 @@ const iconMap: {
   ),
   Neon: ({ size = 48, style }) => (
     <Image
-      src="/skills/Neon.png"
+      src="/skills/neon.png"
       alt="Neon Database"
       width={size}
       height={size}

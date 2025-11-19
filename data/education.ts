@@ -17,7 +17,7 @@ export const education: Education[] = [
     startYear: "2022",
     endYear: "2025",
     description:
-      "Gained knowledge in core business areas including Accounting, Finance, and Marketing, and graduated with a CGPA of 9.36.",
+      "Gained knowledge in core business areas including Accounting, Finance, and Marketing, and graduated with a CGPA of 8.36.",
   },
   {
     id: "2",
