@@ -40,11 +40,6 @@ git clone https://github.com/dharshan47/portfolio.git
 cd portfolio
 npm install
 
-Run Locally
-npm run dev
 
-
-Open http://localhost:3000
- in your browser.
 
 
