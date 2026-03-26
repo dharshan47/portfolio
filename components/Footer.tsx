@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { Mail } from "lucide-react";
+import { Gmail } from "./icon/Gmail";
 import { useRouter } from "next/navigation";
 
 const Footer = () => {
@@ -28,7 +28,7 @@ const Footer = () => {
     {
       name: "Email",
       url: "https://mail.google.com/mail/?view=cm&fs=1&to=dharshan0747@gmail.com",
-      icon: Mail,
+      icon: Gmail,
       color: "#EA4335",
     },
     {
@@ -46,9 +46,10 @@ const Footer = () => {
   ];
   return (
     <footer
-      className="border-t  "
+      className=""
       style={{
         backdropFilter: "blur(16px) saturate(180%)",
+
         backgroundColor: "rgba(17, 25, 40, 0.75)",
         border: "1px solid rgba(255, 255, 255, 0.125)",
       }}
@@ -108,19 +109,25 @@ const Footer = () => {
             className="mb-8"
           >
             <div className="flex flex-wrap justify-center gap-6 text-sm">
-              {["About", "Education", "Skills", "Projects", "Contact"].map(
-                (item) => (
-                  <button
-                    key={item}
-                    onClick={() => handleScroll(item.toLowerCase())}
-                    className="dark:hover:text-neutral-300 "
-                  >
-                    {item}
-                  </button>
-                )
-              )}
+              {[
+                { name: "About", id: "about" },
+                { name: "Education", id: "education" },
+                { name: "Skills", id: "skills" },
+                { name: "Open Source ", id: "opensource" },
+                { name: "Projects", id: "projects" },
+                { name: "Contact", id: "contact" },
+              ].map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => handleScroll(item.id)}
+                  className="dark:hover:text-neutral-300 "
+                >
+                  {item.name}
+                </button>
+              ))}
             </div>
           </motion.div>
+
 
           {/* Copyright */}
           <motion.div

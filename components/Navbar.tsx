@@ -12,6 +12,7 @@ const Navbar = () => {
     { link: "/#about", name: "About" },
     { link: "/#education", name: "Education" },
     { link: "/#skills", name: "Skills" },
+     { link: "/#opensource", name: "Open Source" },
     { link: "/#projects", name: "Projects" },
     { link: "/#contact", name: "Contact" },
   ];
@@ -20,11 +21,12 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, delay: 0.1 }}
-      className="fixed top-0 w-full z-50 border border-b  "
+      className="fixed top-0 w-full z-50"
       style={{
         backdropFilter: "blur(16px) saturate(180%)",
+       
         backgroundColor: "rgba(17, 25, 40, 0.75)",
-         border: "1px solid rgba(255, 255, 255, 0.125)"
+        border: "1px solid rgba(255, 255, 255, 0.125)"
       }}
     >
       <div className="mx-auto px-4 sm:px-6 md:px-8">

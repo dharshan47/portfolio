@@ -1,17 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { projects } from "@/data/projects";
+import { openSourceProjects } from "@/data/projects";
 import Image from "next/image";
 import { FaGithub, FaLocationArrow } from "react-icons/fa6";
-import MagicButton from "./MagicButton";
-import { useRouter } from "next/navigation";
 
-const Projects = () => {
-  const router = useRouter();
+const OpenSource = () => {
   return (
-    <section id="projects" className="py-8 scroll-mt-12">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+    <section id="opensource" className="py-8 scroll-mt-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 mb-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -20,12 +17,12 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-purple-300 mb-6">
-            Projects
+            Open Source
           </h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 gap-6">
-          {projects.map((item) => (
+        <div className="flex flex-wrap justify-center gap-6 ">
+          {openSourceProjects.map((item) => (
             <motion.div
               key={item.id}
               whileHover={{ scale: 1.02 }}
@@ -39,7 +36,6 @@ const Projects = () => {
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-fill rounded-2xl"
-                  priority={item.id === "1"} // Priority for the first project image if needed
                 />
               </div>
 
@@ -95,20 +91,9 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
-
-        <div
-          onClick={() => router.push("/other-projects")}
-          className="flex justify-center md:mt-0 mt-6 "
-        >
-          <MagicButton
-            title="Show other projects"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </div>
       </div>
     </section>
   );
 };
 
-export default Projects;
+export default OpenSource;

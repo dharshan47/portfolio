@@ -2,8 +2,12 @@
 
 
 import { motion } from "framer-motion";
-import Canvas3D from "./Canvas3D";
+import dynamic from "next/dynamic";
 import { Download, ExternalLink } from "lucide-react";
+
+const Canvas3D = dynamic(() => import("./Canvas3D"), {
+  ssr: false,
+});
 
 const About = () => {
   return (
@@ -30,7 +34,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="relative flex justify-center "
           >
-            <div className="w-70 h-70 lg:w-80 lg:h-80 border-3 border-purple-300 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-70 h-70 lg:w-80 lg:h-80 border-3 border-purple-300 rounded-full overflow-hidden flex items-center justify-center bg-[#030014]">
               {/* Canvas3D fills the parent container */}
               <Canvas3D className="w-full h-full overflow-hidden rounded-full" />
             </div>

@@ -83,7 +83,7 @@
 }
 
 .dark {
-  --background: 240 10% 3.9%;
+  --background: oklch(12.9% 0.042 264.695); /* This is roughly slate-950 */
   --foreground: 0 0% 98%;
   --card: 240 10% 3.9%;
   --card-foreground: 0 0% 98%;
@@ -142,4 +142,20 @@
     transform: translate(-50%, -40%) scale(1);
   }
 }
+
+@keyframes heading-fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heading-fade-up {
+  animation: heading-fade-up 0.4s ease-out forwards;
+}
+
 

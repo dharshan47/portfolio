@@ -266,3 +266,22 @@ export const otherProjects: Project[] = [
     githubUrl: "https://github.com/dharshan47/travel-co",
   },
 ];
+
+export const openSourceProjects: Project[] = [
+  {
+    id: "1",
+    title: "Fetch-Qwery",
+    description:
+      "The high-performance, lightweight data fetching solution for React and Next.js.",
+    technologies: [
+      "/projects/ts.svg",
+      "/projects/react.svg",
+      "/projects/next.svg",
+      "/skills/tanstack.png",
+      "/projects/npm.svg",
+    ],
+    image: "/projects/fetch-qwery.png",
+    liveUrl: "https://fetch-qwery.vercel.app",
+    githubUrl: "https://github.com/dharshan47/fetch-query",
+  },
+];
