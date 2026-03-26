@@ -31,3 +31,15 @@ A modern, responsive, and interactive personal portfolio built with **Next.js**,
 
 ---
 
+## **🚀 Getting Started**
+
+### Installation
+
+```bash
+git clone https://github.com/dharshan47/portfolio.git
+cd portfolio
+npm install
+
+
+
+
